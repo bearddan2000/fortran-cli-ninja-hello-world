@@ -1,0 +1,7 @@
+COMPILER=gfortran
+
+rule cc
+  command = $COMPILER $in -o $out
+  description = CC $out
+
+build main: cc main.f90
